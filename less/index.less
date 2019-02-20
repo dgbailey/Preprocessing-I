@@ -52,6 +52,8 @@ table {
 @mobile: ( max-width: 515px );
 @h3-fontstack: 'Dosis', 'sans-serif';
 @column-text-fs:'Yantramanav', 'sans-serif';
+@h1-fontstack:'BenchNine', 'sans-serif';
+@h2-fontstack: 'Caveat', cursive;
 //Mixins
 .column(){
 	display:flex;
@@ -83,6 +85,7 @@ html, body {
 		height:100%;
 		align-items: center;
 		justify-content:flex-start;
+		
 		
 
 		@media @mobile{
@@ -116,18 +119,24 @@ html, body {
 			}
 			
 			h1{
-				font-size: 3rem;
+				font-size: 4rem;
 				margin-bottom: 10px;
+				font-family: @h1-fontstack;
+			}
+
+			h2{
+				font-family: @h2-fontstack;
+				font-size:1.25rem;
 			}
 			
 			
 
-		}
+		}//vanity box
 	}//header
 
 	nav{
-		border-bottom: 2px solid black;
-		border-block-end-style: dotted;
+		border-bottom: .25px solid black;
+		
 		width:100%;
 		height:100%;
 		text-align:center;
