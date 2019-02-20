@@ -48,6 +48,18 @@ table {
 	border-spacing: 0;
 }
 
+//variables
+@mobile: ( max-width: 515px );
+@h3-fontstack: 'Dosis', 'sans-serif';
+//Mixins
+.column(){
+	display:flex;
+	flex-direction:column;
+}
+
+.uni-pad(){
+	padding:10px;
+}
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -57,6 +69,145 @@ html, body {
     height: 100%;
 }
 
-body{
-	background-color:red;
+.container-home{
+	max-width:900px;
+	margin:0px auto;
+	border:1px solid blue;
+
+
+	header{
+		display:flex;
+		padding:20px;
+		height:100%;
+		align-items: center;
+		justify-content:flex-start;
+		border: 1px solid black;
+
+		@media @mobile{
+			flex-direction:column;
+		}
+		img{
+			width:200px;
+			margin-right:40px;
+			height: 200px;
+			border-radius: 100px;
+			padding:10px;
+			border: 3px solid black;
+		}
+		.vanity-box{
+			
+			height:100%;
+			width:50%;
+			
+			// margin-right:40px;
+
+
+			border: 1px solid purple;
+
+			@media @mobile{
+				width:100%;
+				text-align:center;
+			}
+			
+			h1{
+				font-size: 3rem;
+				margin-bottom: 10px;
+			}
+			
+			
+
+		}
+	}//header
+
+	nav{
+		border-bottom: 2px solid black;
+		border-block-end-style: dotted;
+		width:100%;
+		height:100%;
+		text-align:center;
+		padding-bottom:10px;
+
+		a{
+			margin-right:20px;
+		}
+	}
+
+
+	section.main-content{
+		display:flex;
+
+		@media @mobile{
+			flex-direction: column;
+	
+		}
+
+		section.left-column{
+			.column();
+			background: gray;
+			width:35%;
+			
+			margin-right:5%;
+
+			@media @mobile{
+				width: 100%;
+			}
+			
+			.column-section{
+				
+				.uni-pad();
+				
+				margin:20px 0px;
+
+				h3{
+					font-size:1.25rem;
+					font-family: @h3-fontstack;
+					border-bottom:1px solid black;
+					padding-bottom:5px;
+
+				}
+
+				.column-text{
+					padding:10px;
+				}
+			}
+
+		}//section.left-column
+		
+		section.right-column{
+			background:lightblue;
+			width:60%;
+			.column();
+			align-items: center;
+			.uni-pad;
+
+			@media @mobile{
+				width: 100%;
+			}
+
+			.column-section{
+				margin:20px 0px;
+				width:100%;
+			
+
+				
+
+				h3{
+					font-size:1.25rem;
+					border-bottom:1px solid black;
+					padding-bottom:5px;
+					font-family: @h3-fontstack;
+				}
+
+				.column-text{
+					padding:10px;
+				}
+
+					
+			}
+			.column-section.experience{
+				border-left:1.5px solid black;
+			}
+		}
+
+	}//section.main-content
 }
