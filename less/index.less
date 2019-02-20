@@ -51,6 +51,7 @@ table {
 //variables
 @mobile: ( max-width: 515px );
 @h3-fontstack: 'Dosis', 'sans-serif';
+@column-text-fs:'Yantramanav', 'sans-serif';
 //Mixins
 .column(){
 	display:flex;
@@ -72,7 +73,8 @@ html, body {
 .container-home{
 	max-width:900px;
 	margin:0px auto;
-	border:1px solid blue;
+	
+	background:ghostwhite;
 
 
 	header{
@@ -81,7 +83,7 @@ html, body {
 		height:100%;
 		align-items: center;
 		justify-content:flex-start;
-		border: 1px solid black;
+		
 
 		@media @mobile{
 			flex-direction:column;
@@ -93,6 +95,10 @@ html, body {
 			border-radius: 100px;
 			padding:10px;
 			border: 3px solid black;
+			
+			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+			
 		}
 		.vanity-box{
 			
@@ -102,7 +108,7 @@ html, body {
 			// margin-right:40px;
 
 
-			border: 1px solid purple;
+			
 
 			@media @mobile{
 				width:100%;
@@ -129,12 +135,20 @@ html, body {
 
 		a{
 			margin-right:20px;
+			color: black;
+			
+
+			
+
+			
 		}
 	}
 
 
 	section.main-content{
 		display:flex;
+		font-family: @column-text-fs;
+		line-height: 1.25rem;
 
 		@media @mobile{
 			flex-direction: column;
@@ -143,7 +157,7 @@ html, body {
 
 		section.left-column{
 			.column();
-			background: gray;
+			
 			width:35%;
 			
 			margin-right:5%;
@@ -154,12 +168,12 @@ html, body {
 			
 			.column-section{
 				
-				.uni-pad();
+				// .uni-pad();
 				
 				margin:20px 0px;
 
 				h3{
-					font-size:1.25rem;
+					font-size:2rem;
 					font-family: @h3-fontstack;
 					border-bottom:1px solid black;
 					padding-bottom:5px;
@@ -167,18 +181,18 @@ html, body {
 				}
 
 				.column-text{
-					padding:10px;
+					padding:20px;
 				}
 			}
 
 		}//section.left-column
 		
 		section.right-column{
-			background:lightblue;
+			
 			width:60%;
 			.column();
 			align-items: center;
-			.uni-pad;
+			
 
 			@media @mobile{
 				width: 100%;
@@ -187,25 +201,36 @@ html, body {
 			.column-section{
 				margin:20px 0px;
 				width:100%;
+				
+
+				
 			
 
 				
 
 				h3{
-					font-size:1.25rem;
+					font-size:2rem;
 					border-bottom:1px solid black;
 					padding-bottom:5px;
 					font-family: @h3-fontstack;
 				}
 
 				.column-text{
-					padding:10px;
+					border-left:1.5px solid black;
+					padding-left:20px;
+					margin-top:20px;
+
+				p{
+					margin:15px;
+				}
 				}
 
 					
 			}
-			.column-section.experience{
-				border-left:1.5px solid black;
+			
+			.experience{
+				padding-left:10px;
+				
 			}
 		}
 

@@ -137,7 +137,7 @@ body {
 .container-home {
   max-width: 900px;
   margin: 0px auto;
-  border: 1px solid blue;
+  background: ghostwhite;
 }
 .container-home header {
   display: flex;
@@ -145,7 +145,6 @@ body {
   height: 100%;
   align-items: center;
   justify-content: flex-start;
-  border: 1px solid black;
 }
 @media ( max-width: 515px ) {
   .container-home header {
@@ -159,11 +158,13 @@ body {
   border-radius: 100px;
   padding: 10px;
   border: 3px solid black;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .container-home header .vanity-box {
   height: 100%;
   width: 50%;
-  border: 1px solid purple;
 }
 @media ( max-width: 515px ) {
   .container-home header .vanity-box {
@@ -185,9 +186,12 @@ body {
 }
 .container-home nav a {
   margin-right: 20px;
+  color: black;
 }
 .container-home section.main-content {
   display: flex;
+  font-family: 'Yantramanav', 'sans-serif';
+  line-height: 1.25rem;
 }
 @media ( max-width: 515px ) {
   .container-home section.main-content {
@@ -197,7 +201,6 @@ body {
 .container-home section.main-content section.left-column {
   display: flex;
   flex-direction: column;
-  background: gray;
   width: 35%;
   margin-right: 5%;
 }
@@ -207,25 +210,22 @@ body {
   }
 }
 .container-home section.main-content section.left-column .column-section {
-  padding: 10px;
   margin: 20px 0px;
 }
 .container-home section.main-content section.left-column .column-section h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-family: 'Dosis', 'sans-serif';
   border-bottom: 1px solid black;
   padding-bottom: 5px;
 }
 .container-home section.main-content section.left-column .column-section .column-text {
-  padding: 10px;
+  padding: 20px;
 }
 .container-home section.main-content section.right-column {
-  background: lightblue;
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 }
 @media ( max-width: 515px ) {
   .container-home section.main-content section.right-column {
@@ -237,14 +237,19 @@ body {
   width: 100%;
 }
 .container-home section.main-content section.right-column .column-section h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   border-bottom: 1px solid black;
   padding-bottom: 5px;
   font-family: 'Dosis', 'sans-serif';
 }
 .container-home section.main-content section.right-column .column-section .column-text {
-  padding: 10px;
-}
-.container-home section.main-content section.right-column .column-section.experience {
   border-left: 1.5px solid black;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.container-home section.main-content section.right-column .column-section .column-text p {
+  margin: 15px;
+}
+.container-home section.main-content section.right-column .experience {
+  padding-left: 10px;
 }
