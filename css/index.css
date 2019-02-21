@@ -237,7 +237,7 @@ body {
 .container-home nav a {
   margin-right: 50px;
   color: black;
-  font-family: 'Quattrocento', serif;
+  font-family: 'Open Sans', 'sans-serif';
   font-size: 1rem;
 }
 @media ( max-width: 515px ) {
@@ -256,9 +256,10 @@ body {
 }
 .container-home section.main-content {
   display: flex;
-  font-family: 'Quattrocento', serif;
+  font-family: 'Open Sans', 'sans-serif';
   line-height: 1.25rem;
   margin-top: 25px;
+  font-weight: 100;
 }
 @media ( max-width: 515px ) {
   .container-home section.main-content {
