@@ -152,9 +152,9 @@ body {
   }
 }
 .container-home header img {
-  width: 175px;
-  margin: 0px 125px 0px 0px;
-  height: 175px;
+  width: 190px;
+  margin: 0px 108px 0px 0px;
+  height: 190px;
   border-radius: 100px;
   padding: 10px;
   margin-top: 20px;
@@ -174,9 +174,11 @@ body {
   }
 }
 .container-home header .vanity-box h1 {
-  font-size: 3rem;
+  font-size: 3.25rem;
   margin-bottom: 10px;
-  font-family: 'B612 Mono', monospace;
+  font-family: 'Oswald', 'sans-serif';
+  font-weight: bold;
+  letter-spacing: 0.45rem;
 }
 .container-home header .vanity-box h2 {
   font-family: 'Caveat', cursive;
@@ -252,7 +254,7 @@ body {
 }
 .container-home section.main-content section.left-column .column-section h3 {
   font-size: 1.15rem;
-  font-family: 'B612 Mono', monospace;
+  font-family: 'Oswald', 'sans-serif';
   border-bottom: 1px solid gray;
   letter-spacing: 0.25rem;
   padding-bottom: 10px;
@@ -279,7 +281,7 @@ body {
   font-size: 1.15rem;
   border-bottom: 1px solid gray;
   padding-bottom: 10px;
-  font-family: 'B612 Mono', monospace;
+  font-family: 'Oswald', 'sans-serif';
   letter-spacing: 0.25rem;
 }
 .container-home section.main-content section.right-column .column-section .column-text {
