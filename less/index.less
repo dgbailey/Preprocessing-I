@@ -51,10 +51,11 @@ table {
 
 //variables
 @mobile: ( max-width: 515px );
-@h3-fontstack: 'Dosis', 'sans-serif';
+@h3-fontstack: 'B612 Mono', monospace;
 @column-text-fs:'Yantramanav', 'sans-serif';
-@h1-fontstack:'BenchNine', 'sans-serif';
+@h1-fontstack:'B612 Mono', monospace;
 @h2-fontstack: 'Caveat', cursive;
+
 //Mixins
 .column(){
 	display:flex;
@@ -83,6 +84,8 @@ html, body {
 	header{
 		display:flex;
 		padding:20px;
+		
+
 		height:100%;
 		align-items: center;
 		justify-content:flex-start;
@@ -91,13 +94,15 @@ html, body {
 
 		@media @mobile{
 			flex-direction:column;
+			
 		}
 		img{
-			width:200px;
-			margin-right:40px;
-			height: 200px;
+			width:175px;
+			margin:0px 80px 0px 50px;
+			height: 175px;
 			border-radius: 100px;
 			padding:10px;
+			margin-top:20px;
 			border: 3px solid black;
 			
 			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -108,6 +113,7 @@ html, body {
 			
 			height:100%;
 			width:50%;
+			
 			
 			// margin-right:40px;
 
@@ -120,23 +126,18 @@ html, body {
 			}
 			
 			h1{
-				font-size: 4rem;
+				font-size: 3rem;
 				margin-bottom: 10px;
 				font-family: @h1-fontstack;
 			}
 
 			h2{
 				font-family: @h2-fontstack;
-				font-size:1.25rem;
+				font-size:1.75rem;
 			}
 			
-			
-
-		}//vanity box
-	}//header
-
-	nav{
-		border-bottom: .25px solid black;
+				nav{
+		border-bottom: .25px solid gray;
 		
 		width:100%;
 		height:100%;
@@ -146,6 +147,8 @@ html, body {
 		a{
 			margin-right:20px;
 			color: black;
+			font-family: @column-text-fs;
+
 			
 
 			
@@ -154,11 +157,41 @@ html, body {
 		}
 	}
 
+		}//vanity box
+	}//header
+
+	nav{
+		border-bottom: .25px solid gray;
+		display:flex;
+		justify-content: flex-end;
+		width:100%;
+		height:100%;
+		text-align:right;
+		padding-bottom:10px;
+		padding-right: 50px;
+
+		a{
+			margin-right:70px;
+			color: black;
+			font-family: @column-text-fs;
+
+			
+
+			
+
+			
+		}
+		a:last-child{
+			margin-right: 0px;
+		}
+	}
+
 
 	section.main-content{
 		display:flex;
 		font-family: @column-text-fs;
 		line-height: 1.25rem;
+		margin-top:25px;
 
 		@media @mobile{
 			flex-direction: column;
@@ -183,10 +216,12 @@ html, body {
 				margin:20px 0px;
 
 				h3{
-					font-size:2rem;
+					font-size:1.25rem;
 					font-family: @h3-fontstack;
-					border-bottom:1px solid black;
-					padding-bottom:5px;
+					border-bottom:1px solid gray;
+					border-block-end: thick double gray;
+					padding-bottom:10px;
+					
 
 				}
 
@@ -219,9 +254,11 @@ html, body {
 				
 
 				h3{
-					font-size:2rem;
-					border-bottom:1px solid black;
-					padding-bottom:5px;
+					font-size:1.25rem;
+					font-family: @h3-fontstack;
+					border-bottom:1px solid gray;
+					border-block-end: thick double gray;
+					padding-bottom:10px;
 					font-family: @h3-fontstack;
 				}
 
