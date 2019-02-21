@@ -108,12 +108,16 @@ html, body {
 			
 			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 			filter: grayscale(100%);
+
+			@media @mobile{
+			display:none;
+			}
 			
 		}
 		.vanity-box{
 			
 			height:100%;
-			width:50%;
+			width:100%;
 			
 			
 			// margin-right:40px;
@@ -124,6 +128,14 @@ html, body {
 			@media @mobile{
 				width:100%;
 				text-align:center;
+				h1{
+					padding:20px 0px;
+				}
+
+				h2{
+					padding:20px 0px;
+					
+				}
 			}
 			
 			h1{
@@ -132,6 +144,7 @@ html, body {
 				font-family: @h1-fontstack;
 				font-weight:bold;
 				letter-spacing: .45rem;
+				
 			}
 
 			h2{
@@ -139,30 +152,23 @@ html, body {
 				font-size:1.75rem;
 				
 			}
+		}//vanity box	
+
 			
-				nav{
-		border-bottom: .25px solid gray;
 		
-		width:100%;
-		height:100%;
-		text-align:center;
-		padding-bottom:10px;
 
-		a{
-			margin-right:20px;
-			color: black;
-			font-family: @column-text-fs;
+		
 
 			
 
 			
 
 			
-		}
-	}
-
-		}//vanity box
+		
 	}//header
+
+		
+	
 
 	nav{
 		border-bottom: .25px solid gray;
@@ -176,17 +182,34 @@ html, body {
 		padding-bottom:30px;
 		padding-right: 50px;
 
+		@media @mobile{
+			display:flex;
+			justify-content: space-around;
+			padding:10px;
+			margin:10px;
+			
+		}
+
 		.nav-image{
 			height:20px;
 			width:20px;
 			margin-right:5px;
+
+			@media @mobile{
+				height:60px;
+				width:60px;
+			}
 		}
 
 		a{
 			margin-right:50px;
 			color: black;
 			font-family: @column-text-fs;
+		
 			
+			@media @mobile{
+				display:none;
+			}
 			
 
 			
@@ -206,7 +229,7 @@ html, body {
 			text-decoration: underline;
 		}
 		
-	}
+	}//nav
 
 
 
