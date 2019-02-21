@@ -212,7 +212,7 @@ body {
   height: 100%;
   text-align: right;
   padding-bottom: 30px;
-  padding-right: 95px;
+  padding-right: 71px;
 }
 @media ( max-width: 515px ) {
   .container-home nav {
@@ -237,7 +237,7 @@ body {
 .container-home nav a {
   margin-right: 50px;
   color: black;
-  font-family: 'Yantramanav', 'sans-serif';
+  font-family: 'Quattrocento', serif;
   font-size: 1rem;
 }
 @media ( max-width: 515px ) {
@@ -256,7 +256,7 @@ body {
 }
 .container-home section.main-content {
   display: flex;
-  font-family: 'Yantramanav', 'sans-serif';
+  font-family: 'Quattrocento', serif;
   line-height: 1.25rem;
   margin-top: 25px;
 }
@@ -286,7 +286,7 @@ body {
   margin: 20px 0px;
 }
 .container-home section.main-content section.left-column .column-section h3 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-family: 'Oswald', 'sans-serif';
   border-bottom: 1px solid gray;
   letter-spacing: 0.25rem;
@@ -295,7 +295,7 @@ body {
 @media ( max-width: 515px ) {
   .container-home section.main-content section.left-column .column-section h3 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 .container-home section.main-content section.left-column .column-section .column-text {
@@ -317,7 +317,7 @@ body {
   width: 100%;
 }
 .container-home section.main-content section.right-column .column-section h3 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   border-bottom: 1px solid gray;
   padding-bottom: 10px;
   font-family: 'Oswald', 'sans-serif';
@@ -326,7 +326,7 @@ body {
 @media ( max-width: 515px ) {
   .container-home section.main-content section.right-column .column-section h3 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 .container-home section.main-content section.right-column .column-section .column-text {
@@ -363,5 +363,6 @@ body {
 @media ( max-width: 515px ) {
   .container-home section.main-content section.right-column .column-section .column-text .border {
     border: none;
+    font-size: 1.75rem;
   }
 }
