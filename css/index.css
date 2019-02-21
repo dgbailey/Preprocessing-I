@@ -212,7 +212,7 @@ body {
   height: 100%;
   text-align: right;
   padding-bottom: 30px;
-  padding-right: 71px;
+  padding-right: 45px;
 }
 @media ( max-width: 515px ) {
   .container-home nav {
