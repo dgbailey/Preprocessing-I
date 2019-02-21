@@ -196,6 +196,7 @@ body {
 }
 .container-home nav {
   border-bottom: 0.25px solid gray;
+  box-shadow: 5px 10px #888888;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -250,7 +251,7 @@ body {
   margin: 20px 0px;
 }
 .container-home section.main-content section.left-column .column-section h3 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-family: 'B612 Mono', monospace;
   border-bottom: 1px solid gray;
   letter-spacing: 0.25rem;
@@ -275,7 +276,7 @@ body {
   width: 100%;
 }
 .container-home section.main-content section.right-column .column-section h3 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   border-bottom: 1px solid gray;
   padding-bottom: 10px;
   font-family: 'B612 Mono', monospace;
