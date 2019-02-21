@@ -139,16 +139,23 @@ body {
   max-width: 900px;
   margin: 0px auto;
 }
+@media ( max-width: 515px ) {
+  .container-home {
+    width: 100%;
+  }
+}
 .container-home header {
   display: flex;
   padding: 20px 20px 0px 20px;
-  height: 100%;
+  width: 100%
+		height:100%;
   align-items: center;
   justify-content: flex-start;
 }
 @media ( max-width: 515px ) {
   .container-home header {
     flex-direction: column;
+    width: 100%;
   }
 }
 .container-home header img {
@@ -212,7 +219,8 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
+    width: 100%;
   }
 }
 .container-home nav .nav-image {
@@ -230,6 +238,7 @@ body {
   margin-right: 50px;
   color: black;
   font-family: 'Yantramanav', 'sans-serif';
+  font-size: 1rem;
 }
 @media ( max-width: 515px ) {
   .container-home nav a {
@@ -254,6 +263,12 @@ body {
 @media ( max-width: 515px ) {
   .container-home section.main-content {
     flex-direction: column;
+    padding: 20px;
+    font-size: 1.75rem;
+    width: 100%;
+  }
+  .container-home section.main-content p {
+    line-height: 1.75rem;
   }
 }
 .container-home section.main-content section.left-column {
@@ -276,6 +291,12 @@ body {
   border-bottom: 1px solid gray;
   letter-spacing: 0.25rem;
   padding-bottom: 10px;
+}
+@media ( max-width: 515px ) {
+  .container-home section.main-content section.left-column .column-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }
 .container-home section.main-content section.left-column .column-section .column-text {
   padding: 20px;
@@ -302,13 +323,30 @@ body {
   font-family: 'Oswald', 'sans-serif';
   letter-spacing: 0.25rem;
 }
+@media ( max-width: 515px ) {
+  .container-home section.main-content section.right-column .column-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
 .container-home section.main-content section.right-column .column-section .column-text {
   padding-left: 20px;
+}
+@media ( max-width: 515px ) {
+  .container-home section.main-content section.right-column .column-section .column-text {
+    padding-left: 20px;
+    font-size: 100%;
+  }
 }
 .container-home section.main-content section.right-column .column-section .column-text .border {
   padding-left: 20px;
   margin-top: 20px;
   border-left: 2px solid black;
+}
+@media ( max-width: 515px ) {
+  .container-home section.main-content section.right-column .column-section .column-text .border {
+    padding: 20px;
+  }
 }
 .container-home section.main-content section.right-column .column-section .column-text .border h4 {
   font-size: 1.15rem;
@@ -321,4 +359,9 @@ body {
 }
 .container-home section.main-content section.right-column .column-section .column-text .border p {
   padding: 20px 0px;
+}
+@media ( max-width: 515px ) {
+  .container-home section.main-content section.right-column .column-section .column-text .border {
+    border: none;
+  }
 }

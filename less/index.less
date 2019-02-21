@@ -79,6 +79,10 @@ html, body {
 	max-width:900px;
 	margin:0px auto;
 	
+	@media @mobile{
+		width:100%;
+		
+	}
 	
 
 
@@ -86,7 +90,7 @@ html, body {
 		display:flex;
 		padding:20px 20px 0px 20px;
 		
-
+		width:100%
 		height:100%;
 		align-items: center;
 		justify-content:flex-start;
@@ -95,6 +99,7 @@ html, body {
 
 		@media @mobile{
 			flex-direction:column;
+			width:100%;
 			
 		}
 		img{
@@ -186,7 +191,9 @@ html, body {
 			display:flex;
 			justify-content: space-around;
 			padding:10px;
-			margin:10px;
+			margin:0px;
+			width:100%;
+			
 			
 		}
 
@@ -205,6 +212,7 @@ html, body {
 			margin-right:50px;
 			color: black;
 			font-family: @column-text-fs;
+			font-size: 1rem;
 		
 			
 			@media @mobile{
@@ -242,7 +250,14 @@ html, body {
 
 		@media @mobile{
 			flex-direction: column;
-	
+			padding:20px;
+			font-size:1.75rem;
+			width:100%;
+			p{
+				line-height: 1.75rem;
+			}
+			
+			
 		}
 
 		section.left-column{
@@ -261,7 +276,7 @@ html, body {
 				// .uni-pad();
 				
 				margin:20px 0px;
-
+				
 				h3{
 					font-size:1.15rem;
 					font-family: @h3-fontstack;
@@ -269,11 +284,16 @@ html, body {
 					letter-spacing: .25rem;
 					padding-bottom:10px;
 					
+					@media @mobile{
+						text-align: center;
+						font-size: 1.5rem;
+						}
 
 				}
 
 				.column-text{
 					padding:20px;
+					
 				}
 			}
 
@@ -294,6 +314,7 @@ html, body {
 				margin:20px 0px;
 				width:100%;
 				
+				
 
 				
 			
@@ -308,16 +329,33 @@ html, body {
 					padding-bottom:10px;
 					font-family: @h3-fontstack;
 					letter-spacing: .25rem;
+
+					@media @mobile{
+						text-align: center;
+						font-size: 1.5rem;
+						}
 				}
 
 				.column-text{
 					padding-left:20px;
+
+					@media @mobile{
+						padding-left:20px;
+						font-size: 100%;
+					}
 					
 					.border{
+
 
 						padding-left:20px;
 						margin-top:20px;
 						border-left:2px solid black;
+
+						@media @mobile{
+							padding:20px;
+						}
+
+						
 
 						h4{
 							font-size:1.15rem;
@@ -333,6 +371,13 @@ html, body {
 						p{
 							padding:20px 0px;
 						}
+
+						@media @mobile{
+							border:none;
+							
+							
+							
+							}
 					}			
 				
 					
@@ -340,6 +385,7 @@ html, body {
 
 				
 				}
+				
 			}
 			
 				
