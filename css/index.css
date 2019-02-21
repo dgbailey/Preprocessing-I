@@ -133,11 +133,11 @@ table {
 html,
 body {
   height: 100%;
+  background: ghostwhite;
 }
 .container-home {
   max-width: 900px;
   margin: 0px auto;
-  background: ghostwhite;
 }
 .container-home header {
   display: flex;
@@ -153,7 +153,7 @@ body {
 }
 .container-home header img {
   width: 175px;
-  margin: 0px 80px 0px 50px;
+  margin: 0px 120px 0px 0px;
   height: 175px;
   border-radius: 100px;
   padding: 10px;
