@@ -303,10 +303,69 @@ body {
   padding: 20px;
 }
 .container-home section.main-content section.right-column {
+  font-family: 'Open Sans', 'sans-serif';
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.container-home section.main-content section.right-column ul {
+  list-style: none;
+  padding: 0;
+  color: ghostwhite;
+}
+.container-home section.main-content section.right-column ul h4 {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+.container-home section.main-content section.right-column ul h5 {
+  font-style: oblique;
+  color: gray;
+  font-weight: bold;
+  padding: 5px;
+}
+.container-home section.main-content section.right-column li {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 10px 35px;
+}
+.container-home section.main-content section.right-column li::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 20px;
+  height: 999px;
+  border: 2px solid black;
+  border-width: 2px 0 0 2px;
+}
+.container-home section.main-content section.right-column li:last-child::before {
+  border-width: 2px 0 0;
+}
+.container-home section.main-content section.right-column li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: ghostwhite;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.container-home section.main-content section.right-column li.current,
+.container-home section.main-content section.right-column li.passed {
+  color: #000;
+}
+.container-home section.main-content section.right-column li.current::before {
+  border-top-color: black;
+}
+.container-home section.main-content section.right-column li.current::after {
+  border-color: black;
+}
+.container-home section.main-content section.right-column li.passed::before,
+.container-home section.main-content section.right-column li.passed::after {
+  border-color: black;
 }
 @media ( max-width: 515px ) {
   .container-home section.main-content section.right-column {
@@ -320,6 +379,7 @@ body {
 .container-home section.main-content section.right-column .column-section h3 {
   font-size: 1.25rem;
   border-bottom: 1px solid gray;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   font-family: 'Oswald', 'sans-serif';
   letter-spacing: 0.25rem;

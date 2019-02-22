@@ -75,6 +75,7 @@ html, body {
 	background:ghostwhite;
 }
 
+
 .container-home{
 	max-width:900px;
 	margin:0px auto;
@@ -301,11 +302,80 @@ html, body {
 		}//section.left-column
 		
 		section.right-column{
-			
+			font-family: @column-text-fs;
 			width:60%;
 			.column();
 			align-items: center;
+
 			
+
+			ul {
+				list-style: none;
+				
+				padding: 0;
+				
+				color:ghostwhite;
+
+				h4{
+					font-size:1.15rem;
+					font-weight:bold;
+				}
+
+				h5{
+					font-style:oblique;
+					color:gray;
+					font-weight: bold;
+					padding:5px;
+				}
+			}
+
+			
+			li {
+			overflow: hidden;
+			position: relative;
+			padding: 0 0 10px 35px;
+			}
+			li::before {
+				content: '';
+				position: absolute;
+				left: 7px;
+				top: 7px;
+				width: 20px;
+				height: 999px;
+				border: 2px solid black;
+				border-width: 2px 0 0 2px;
+				}
+				li:last-child::before {
+				border-width: 2px 0 0;
+				}
+			li::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 12px;
+				height: 12px;
+				background:ghostwhite;
+				border: 2px solid black;
+				border-radius: 50%;
+				}
+			li.current,
+			li.passed {
+				color: #000;
+				}
+				li.current::before {
+				border-top-color:black;
+				
+				}
+				li.current::after {
+				border-color:black;
+				
+				}
+				li.passed::before,
+				li.passed::after {
+				border-color: black;
+				
+			}
 
 			@media @mobile{
 				width: 100%;
@@ -316,7 +386,10 @@ html, body {
 				width:100%;
 				
 				
-
+				
+				
+					
+				
 				
 			
 
@@ -326,7 +399,7 @@ html, body {
 					font-size:1.25rem;
 					font-family: @h3-fontstack;
 					border-bottom:1px solid gray;
-					
+					margin-bottom: 20px;
 					padding-bottom:10px;
 					font-family: @h3-fontstack;
 					letter-spacing: .25rem;
@@ -346,7 +419,7 @@ html, body {
 					}
 					
 					.border{
-
+						
 
 						padding-left:20px;
 						margin-top:20px;
@@ -355,7 +428,7 @@ html, body {
 						@media @mobile{
 							padding:20px;
 						}
-
+						
 						
 
 						h4{
