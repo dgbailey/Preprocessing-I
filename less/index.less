@@ -52,7 +52,7 @@ table {
 //variables
 @mobile: ( max-width: 515px );
 @h3-fontstack: 'Oswald', 'sans-serif';
-@column-text-fs:'Open Sans', 'sans-serif';
+@column-text-fs:'Merriweather', serif;
 @h1-fontstack:'Oswald', 'sans-serif';
 @h2-fontstack: 'Caveat', cursive;
 
@@ -72,13 +72,17 @@ table {
 
 html, body {
 	height: 100%;
-	background:ghostwhite;
+	background: #ffffff;
+	
+	// background-image: url('background-url: http://api.thumbr.it/whitenoise-361x370.png?');
+	// background:#f4f7fdff&noise=626262&density=13&opacity=3;
 }
 
 
 .container-home{
 	max-width:900px;
 	margin:0px auto;
+	
 	
 	@media @mobile{
 		width:100%;
@@ -186,7 +190,7 @@ html, body {
 		height:100%;
 		text-align:right;
 		padding-bottom:30px;
-		padding-right: 45px;
+		padding-right: 24px;
 
 		@media @mobile{
 			display:flex;
@@ -246,8 +250,8 @@ html, body {
 		
 		display:flex;
 		font-family: @column-text-fs;
-		line-height: 1.25rem;
-		margin-top:25px;
+		line-height: 1.75rem;
+		margin-top:50px;
 		font-weight: 100;
 
 		@media @mobile{
@@ -284,7 +288,7 @@ html, body {
 					font-family: @h3-fontstack;
 					border-bottom:1px solid gray;
 					letter-spacing: .25rem;
-					padding-bottom:10px;
+					padding-bottom:20px;
 					
 					@media @mobile{
 						text-align: center;
@@ -317,7 +321,7 @@ html, body {
 				color:ghostwhite;
 
 				h4{
-					font-size:1.15rem;
+					font-size:1.05rem;
 					font-weight:bold;
 				}
 
@@ -325,7 +329,7 @@ html, body {
 					font-style:oblique;
 					color:gray;
 					font-weight: bold;
-					padding:5px;
+					padding-bottom:5px;
 				}
 			}
 
@@ -400,7 +404,7 @@ html, body {
 					font-family: @h3-fontstack;
 					border-bottom:1px solid gray;
 					margin-bottom: 20px;
-					padding-bottom:10px;
+					padding-bottom:20px;
 					font-family: @h3-fontstack;
 					letter-spacing: .25rem;
 

@@ -133,7 +133,7 @@ table {
 html,
 body {
   height: 100%;
-  background: ghostwhite;
+  background: #ffffff;
 }
 .container-home {
   max-width: 900px;
@@ -212,7 +212,7 @@ body {
   height: 100%;
   text-align: right;
   padding-bottom: 30px;
-  padding-right: 45px;
+  padding-right: 24px;
 }
 @media ( max-width: 515px ) {
   .container-home nav {
@@ -237,7 +237,7 @@ body {
 .container-home nav a {
   margin-right: 50px;
   color: black;
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: 'Merriweather', serif;
   font-size: 1rem;
 }
 @media ( max-width: 515px ) {
@@ -256,9 +256,9 @@ body {
 }
 .container-home section.main-content {
   display: flex;
-  font-family: 'Open Sans', 'sans-serif';
-  line-height: 1.25rem;
-  margin-top: 25px;
+  font-family: 'Merriweather', serif;
+  line-height: 1.75rem;
+  margin-top: 50px;
   font-weight: 100;
 }
 @media ( max-width: 515px ) {
@@ -291,7 +291,7 @@ body {
   font-family: 'Oswald', 'sans-serif';
   border-bottom: 1px solid gray;
   letter-spacing: 0.25rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 @media ( max-width: 515px ) {
   .container-home section.main-content section.left-column .column-section h3 {
@@ -303,7 +303,7 @@ body {
   padding: 20px;
 }
 .container-home section.main-content section.right-column {
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: 'Merriweather', serif;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -315,14 +315,14 @@ body {
   color: ghostwhite;
 }
 .container-home section.main-content section.right-column ul h4 {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: bold;
 }
 .container-home section.main-content section.right-column ul h5 {
   font-style: oblique;
   color: gray;
   font-weight: bold;
-  padding: 5px;
+  padding-bottom: 5px;
 }
 .container-home section.main-content section.right-column li {
   overflow: hidden;
@@ -380,7 +380,7 @@ body {
   font-size: 1.25rem;
   border-bottom: 1px solid gray;
   margin-bottom: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-family: 'Oswald', 'sans-serif';
   letter-spacing: 0.25rem;
 }
