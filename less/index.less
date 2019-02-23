@@ -233,10 +233,24 @@ html, body {
 				font-size:1.75rem;
 				
 				
+			
+				
+				
 
 				
 
 				.mob-button{
+
+					&:hover{
+						background:gray;
+					}
+
+					&:active { 
+						background-color: gray;
+						transform: translateY(4px);
+						box-shadow: 0 5px #666;
+						
+					}
 					img{
 						width:80px;
 						height:80px;
@@ -270,6 +284,16 @@ html, body {
 
 				
 				.two{
+
+					&:hover{
+						background:gray;
+					}
+					&:active { 
+						background-color: gray;
+						box-shadow: 0 5px #666;
+						transform: translateY(4px);
+					  }
+
 					margin: 20px;
 					width:40%;
 					height: 100px;
@@ -422,6 +446,10 @@ html, body {
 						font-size: 1.75rem;
 						}
 
+				}
+				h2{
+					font-family:@h2-fontstack;
+					font-size:1.5rem;
 				}
 
 				

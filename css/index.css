@@ -265,6 +265,14 @@ body {
     transform: skewX(-10deg);
     margin-right: 5px;
   }
+  .container-home header .contact-mobile .mob-button:hover {
+    background: gray;
+  }
+  .container-home header .contact-mobile .mob-button:active {
+    background-color: gray;
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+  }
   .container-home header .contact-mobile .mob-button img {
     width: 80px;
     height: 80px;
@@ -285,6 +293,14 @@ body {
     margin-left: 5px;
     text-align: center;
     vertical-align: center;
+  }
+  .container-home header .contact-mobile .two:hover {
+    background: gray;
+  }
+  .container-home header .contact-mobile .two:active {
+    background-color: gray;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
   .container-home header .contact-mobile .two img {
     margin-top: 10px;
@@ -389,6 +405,10 @@ body {
     text-align: center;
     font-size: 1.75rem;
   }
+}
+.container-home section.main-content section.left-column .column-section h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
 }
 .container-home section.main-content section.left-column .column-section .column-text {
   padding: 20px 20px 0px 20px;
