@@ -107,7 +107,7 @@ html, body {
 			width:100%;
 			
 		}
-		img{
+		img.me{
 			width:190px;
 			margin:0px 108px 0px 0px;
 			height: 190px;
@@ -136,6 +136,7 @@ html, body {
 			
 
 			@media @mobile{
+				display:none;
 				width:100%;
 				text-align:center;
 				h1{
@@ -164,8 +165,129 @@ html, body {
 			}
 		}//vanity box	
 
+		.v-mobile{
+			display:none;
+			@media @mobile{
+				max-width:200px;
+				
+
+				display:flex;
+				flex-wrap: wrap;
+				
+
+				h1{
+					font-size: 10rem;
+					margin-bottom: 10px;
+					font-family: @h1-fontstack;
+					font-weight:bold;
+					letter-spacing: .45rem;
+					vertical-align: top;
+					font-weight: lighter;
+					color:gray;
+					
+				}	
+
+				h2{
+					font-family: @h2-fontstack;
+					font-size:1.75rem;
+				}
+				img{
+					
+					width:100px;
+				}
+
+				.logo-br {
+					display:flex;
+					font-size:4rem;
+					width:0%;
+					
+					
+					
+					h1{
+						font-weight:lighter;
+						letter-spacing: -32px;
+						color:black;
+					}
+				
+					
+					
+				}
+			}
+
 			
-		
+				
+			
+
+		}
+			
+		.contact-mobile{
+			display:none;
+			
+			width:100%;
+
+			@media @mobile{
+				display:flex;
+				color:ghostwhite;
+				align-items:center;
+				justify-content: center;
+				font-size:1.75rem;
+				
+				
+
+				
+
+				.mob-button{
+					img{
+						width:80px;
+						height:80px;
+					}
+					display:flex;
+					justify-content: center;
+					align-items: center;
+					margin: 20px;
+					width: 60%;
+					height: 100px;
+					
+					background:gray;    
+					border: 1px solid gray;
+					transform: skewX(-10deg);
+					
+					margin-right:5px;
+					
+
+					h3{
+						
+						height:30%;
+						
+						width:30%;
+						color:lightgray;
+						
+	
+						
+						
+					}
+				}
+
+				
+				.two{
+					margin: 20px;
+					width:40%;
+					height: 100px;
+					display: inline-block;
+					background:black;    
+					border: 1px solid black;
+					transform: skewX(-10deg);
+					margin-left:5px;
+
+					img{
+						width:80px;
+						height:80px;
+						
+					}
+				}
+				
+			}
+		}
 
 		
 
@@ -193,7 +315,7 @@ html, body {
 		padding-right: 24px;
 
 		@media @mobile{
-			display:flex;
+			display:none;
 			justify-content: space-around;
 			padding:10px;
 			margin:0px;
@@ -259,6 +381,7 @@ html, body {
 			padding:20px;
 			font-size:1.75rem;
 			width:100%;
+			margin-top:25px;
 			p{
 				line-height: 1.75rem;
 			}
@@ -338,13 +461,20 @@ html, body {
 					.stars {
 						width:45%;
 						
-						span{
+						.skill{
+							display:flex;
+							
+							.fa{
 						
-						color:black;
-						font-size:1.15rem;
-			
-
+								color:black;
+								font-size:1.25rem;
+								margin-right: 10px;
+								
+		
+								}
+							
 						}
+						
 
 					}
 	
@@ -491,7 +621,7 @@ html, body {
 						
 
 					h4{
-						font-size:1.05rem;
+						font-size:.95rem;
 						font-weight:bold;
 					}
 
