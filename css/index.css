@@ -192,7 +192,7 @@ body {
   }
 }
 .container-home header .vanity-box h1 {
-  font-size: 3.25rem;
+  font-size: 5.25rem;
   margin-bottom: 10px;
   font-family: 'Oswald', 'sans-serif';
   font-weight: bold;
@@ -236,7 +236,7 @@ body {
 }
 .container-home nav a {
   margin-right: 50px;
-  color: black;
+  color: gray;
   font-family: 'Merriweather', serif;
   font-size: 1rem;
 }
@@ -301,6 +301,19 @@ body {
 }
 .container-home section.main-content section.left-column .column-section .column-text {
   padding: 20px;
+}
+.container-home section.main-content section.left-column .column-section .column-text p {
+  margin-bottom: 15px;
+}
+.container-home section.main-content section.left-column .column-section .column-text .rect {
+  background: black;
+  height: 5px;
+  width: 15px;
+  display: inline-block;
+  width: 40%;
+}
+.container-home section.main-content section.left-column .column-section .column-text li {
+  width: 100%;
 }
 .container-home section.main-content section.right-column {
   font-family: 'Merriweather', serif;
