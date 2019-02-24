@@ -103,8 +103,10 @@ html, body {
 		
 
 		@media @mobile{
-			flex-direction:column;
+			justify-content:center;
 			width:100%;
+			padding:0px;
+
 			
 		}
 		img.me{
@@ -172,7 +174,7 @@ html, body {
 		.v-mobile{
 			display:none;
 			@media @mobile{
-				max-width:350px;
+				width:60vw;
 				line-height:.75;
 				margin-bottom:30px;
 				display:flex;
@@ -184,7 +186,7 @@ html, body {
 				margin-top:70px;
 
 				h1{
-					font-size: 10rem;
+					font-size: 36vw;
 					margin-bottom: 10px;
 					font-family: @h1-fontstack;
 					font-weight:bold;
@@ -196,6 +198,7 @@ html, body {
 				}	
 				.dg{
 					margin-top:5px;
+					margin-left:2px;
 				}
 
 				.b{
@@ -216,9 +219,10 @@ html, body {
 
 				.logo-br {
 					display:flex;
+					height:44%;
 					font-size:4rem;
 					width:90%;
-					height:120px;
+					height:44%;
 					align-items: flex-end;
 					justify-content: flex-end;
 					border-radius: 10px;
@@ -457,8 +461,19 @@ html, body {
 			
 			margin-right:5%;
 
+			.mob-show{
+				display:none;
+			}
 			@media @mobile{
 				width: 100%;
+				.mob-hide{
+					display:none;
+
+				}
+
+				.mob-show{
+					display:block;
+				}
 			}
 			
 			
@@ -466,7 +481,20 @@ html, body {
 				
 				// .uni-pad();
 				
+				
 				margin:20px 0px 20px 0px;
+
+				.mobile{
+					display:none;
+				}
+				@media @mobile{
+					.mobile{
+						display:block;
+					}
+					.desk{
+						display:none;
+					}
+				}
 				
 				h3{
 					font-size:1.25rem;
@@ -478,7 +506,8 @@ html, body {
 					@media @mobile{
 						text-align: center;
 						font-size: 1.75rem;
-						}
+						
+					}
 
 				}
 				h2{
@@ -490,6 +519,13 @@ html, body {
 
 				.column-text{
 					padding:20px 20px 0px 20px;
+					
+					
+					
+				
+				
+					
+				}
 					
 
 					p{
@@ -506,8 +542,9 @@ html, body {
 						
 						
 					}
+
 					
-				
+					
 					
 				}//coltext
 
