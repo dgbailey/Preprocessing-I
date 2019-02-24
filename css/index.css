@@ -147,8 +147,8 @@ body {
 .container-home header {
   display: flex;
   padding: 0px 20px 0px 20px;
-  width: 100%
-		height:100%;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: flex-start;
 }
@@ -249,13 +249,17 @@ body {
   }
   .container-home header .v-mobile .logo-br {
     display: flex;
-    font-size: 4rem;
+    font-size: 2.5rem;
     width: 90%;
     height: 44%;
     align-items: flex-end;
     justify-content: flex-end;
     border-radius: 10px;
     border: 4px solid white;
+    padding-top: 10px;
+  }
+  .container-home header .v-mobile .logo-br h6 {
+    display: inline-block;
   }
   .container-home header .v-mobile .logo-br h1 {
     font-weight: lighter;
@@ -267,7 +271,7 @@ body {
     height: 100%;
     width: 100%;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     border-radius: 7px;
     letter-spacing: -5px;
   }
@@ -397,74 +401,66 @@ body {
 .container-home section.main-content section.left-column .column-section .column-text {
   padding: 20px 20px 0px 20px;
 }
-.container-home section.main-content section.left-column .column-section .column-text .mobile {
-  display: none;
-}
-@media ( max-width: 515px ) {
-  .container-home section.main-content section.left-column .column-section .column-text .column-text .mobile {
-    display: block;
-  }
-}
-.container-home section.main-content section.left-column .column-section .column-text p {
+.container-home section.main-content section.left-column .column-section p {
   margin-bottom: 15px;
 }
-.container-home section.main-content section.left-column .column-section .column-text .rect {
+.container-home section.main-content section.left-column .column-section .rect {
   background: black;
   height: 5px;
   width: 15px;
   display: inline-block;
   width: 40%;
 }
-.container-home section.main-content section.left-column .column-section .rating {
+.container-home section.main-content section.left-column .rating {
   display: flex;
   justify-content: space-between;
 }
-.container-home section.main-content section.left-column .column-section .rating .skills {
+.container-home section.main-content section.left-column .rating .skills {
   width: 45%;
 }
-.container-home section.main-content section.left-column .column-section .rating .stars {
+.container-home section.main-content section.left-column .rating .stars {
   width: 45%;
 }
-.container-home section.main-content section.left-column .column-section .rating .stars .skill {
+.container-home section.main-content section.left-column .rating .stars .skill {
   display: flex;
 }
-.container-home section.main-content section.left-column .column-section .rating .stars .skill .fa {
+.container-home section.main-content section.left-column .rating .stars .skill .fa {
   color: black;
   font-size: 1.25rem;
   margin-right: 10px;
 }
-.container-home section.main-content section.right-column {
+.container-home section.right-column {
   font-family: 'Merriweather', serif;
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container-home section.main-content section.right-column ul {
+.container-home section.right-column ul {
   list-style: none;
   padding: 0;
   color: black;
 }
-.container-home section.main-content section.right-column ul h4 {
+.container-home section.right-column ul h4 {
   font-size: 1.05rem;
   font-weight: bold;
 }
-.container-home section.main-content section.right-column ul h5 {
+.container-home section.right-column ul h5 {
   font-style: oblique;
   color: gray;
   font-weight: bold;
   padding-bottom: 5px;
 }
 @media ( max-width: 515px ) {
-  .container-home section.main-content section.right-column {
+  .container-home section.right-column {
     width: 100%;
   }
 }
-.container-home section.main-content section.right-column .column-section {
+.container-home section.right-column .column-section {
   margin: 20px 0px;
   width: 100%;
 }
-.container-home section.main-content section.right-column .column-section h3 {
+.container-home section.right-column .column-section h3 {
   font-size: 1.25rem;
   border-bottom: 1px solid gray;
   margin-bottom: 20px;
@@ -473,34 +469,34 @@ body {
   letter-spacing: 0.25rem;
 }
 @media ( max-width: 515px ) {
-  .container-home section.main-content section.right-column .column-section h3 {
+  .container-home section.right-column .column-section h3 {
     text-align: center;
     font-size: 1.75rem;
   }
 }
-.container-home section.main-content section.right-column .column-section .column-text {
+.container-home section.right-column .column-section .column-text {
   padding-left: 20px;
   border-left: 5px solid ghostwhite;
 }
-.container-home section.main-content section.right-column .column-section .column-text li {
+.container-home section.right-column .column-section .column-text li {
   margin-bottom: 15px;
 }
 @media ( max-width: 515px ) {
-  .container-home section.main-content section.right-column .column-section .column-text {
+  .container-home section.right-column .column-section .column-text {
     padding-left: 20px;
     font-size: 100%;
   }
 }
-.container-home section.main-content section.right-column .column-section .column-text h4 {
+.container-home section.right-column .column-section .column-text h4 {
   font-size: 0.95rem;
   font-weight: bold;
 }
-.container-home section.main-content section.right-column .column-section .column-text h5 {
+.container-home section.right-column .column-section .column-text h5 {
   font-style: oblique;
   color: gray;
   font-weight: bold;
   font-size: 1rem;
 }
-.container-home section.main-content section.right-column .column-section .column-text p {
+.container-home section.right-column .column-section .column-text p {
   padding: 20px 0px;
 }
