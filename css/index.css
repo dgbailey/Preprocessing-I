@@ -366,6 +366,17 @@ body {
 .container-home section.main-content section.left-column .column-section {
   margin: 20px 0px 20px 0px;
 }
+.container-home section.main-content section.left-column .column-section .mobile {
+  display: none;
+}
+@media ( max-width: 515px ) {
+  .container-home section.main-content section.left-column .column-section .mobile {
+    display: block;
+  }
+  .container-home section.main-content section.left-column .column-section .desk {
+    display: none;
+  }
+}
 .container-home section.main-content section.left-column .column-section h3 {
   font-size: 1.25rem;
   font-family: 'Oswald', 'sans-serif';
@@ -385,6 +396,14 @@ body {
 }
 .container-home section.main-content section.left-column .column-section .column-text {
   padding: 20px 20px 0px 20px;
+}
+.container-home section.main-content section.left-column .column-section .column-text .mobile {
+  display: none;
+}
+@media ( max-width: 515px ) {
+  .container-home section.main-content section.left-column .column-section .column-text .column-text .mobile {
+    display: block;
+  }
 }
 .container-home section.main-content section.left-column .column-section .column-text p {
   margin-bottom: 15px;
