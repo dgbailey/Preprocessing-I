@@ -109,23 +109,126 @@ html, body {
 
 			
 		}
-		img.me{
-			width:190px;
-			margin:0px 108px 0px 0px;
-			height: 190px;
-			border-radius: 100px;
-			padding:10px;
-			margin-top:20px;
-			border: 3px solid black;
-			
-			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-			filter: grayscale(100%);
+
+		.v-desk{
+			width:16rem;
+			line-height:.75;
+			margin-bottom:30px;
+			display:flex;
+			flex-wrap: wrap;
+			align-content: center;
+			border: 1px solid black;
+			background:black;
+			transform: rotate(-45deg);
+			margin-top:60px;
+			margin-right: 128px;
+			margin: 7% 13% 2% 2%;
 
 			@media @mobile{
-			display:none;
+				display:none;
 			}
+
+			h1{
+				font-size: 6rem;
+				margin-bottom: 10px;
+				font-family: @h1-fontstack;
+				font-weight:bold;
+				letter-spacing: .45rem;
+				vertical-align: top;
+				font-weight: lighter;
+				color:white;
+				
+			}	
+			.dg{
+				margin-top:5px;
+				margin-left:2px;
+			}
+
+			.b{
+				margin-top:5px;
+			}
+			.black{
+				color:white;
+			}
+
+			h2{
+				font-family: @h2-fontstack;
+				font-size:1.75rem;
+			}
+			img{
+				
+				width:100px;
+			}
+
+			.logo-br {
+				display:flex;
+				height:44%;
+				font-size:2.5rem;
+				width:90%;
+				height:44%;
+				align-items: flex-end;
+				justify-content: flex-end;
+				border-radius: 10px;
+				border:4px solid white;
+				padding-top:10px;
+				h6{
+					display:inline-block;
+				}
+				h1{
+					font-weight:lighter;
+					letter-spacing: -32px;
+					color:black;
+				}
+				@keyframes blink {
+					50% {
+						opacity: 0.0;
+						}
+					}
+					@-webkit-keyframes blink {
+					50% {
+						opacity: 0.0;
+						}
+					}
+				
+				.blink{
+					animation: blink 1s step-start 0s infinite;
+					-webkit-animation: blink 1s step-start 0s infinite;
+				}	
+				.square{
+					background:black;
+					height:100%;
+					width:100%;
+					color:white;
+					font-size:2.5rem;
+					border-radius: 7px;
+					letter-spacing:-5px;
+					
 			
-		}
+				}
+			}//desktop logo bottom right
+			
+		
+		
+			
+		}//v desktop logo		
+		// img.me{
+			
+			
+		// 	margin:0px 65px 0px 0px;
+		// 	height: 238px;
+		// 	border-radius: 100px;
+		// 	padding:0px;
+		// 	margin-top:20px;
+			
+			
+		// 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+		// 	filter: grayscale(100%);
+
+		// 	@media @mobile{
+		// 	display:none;
+		// 	}
+			
+		// }
 		.vanity-box{
 			
 			height:100%;
@@ -155,9 +258,9 @@ html, body {
 			}
 			
 			h1{
-				font-size: 3rem;
+				font-size: 4rem;
 				margin-bottom: 10px;
-				font-family: @h1-fontstack;
+				font-family: 'Oswald','sans-serif';
 				font-weight:bold;
 				letter-spacing: .45rem;
 
@@ -236,7 +339,21 @@ html, body {
 						letter-spacing: -32px;
 						color:black;
 					}
+					@keyframes blink {
+						50% {
+						  opacity: 0.0;
+						}
+					}
+					@-webkit-keyframes blink {
+						50% {
+						  opacity: 0.0;
+						}
+					}
 					
+					.blink{
+						animation: blink 1s step-start 0s infinite;
+						-webkit-animation: blink 1s step-start 0s infinite;
+					}
 					.square{
 						background:black;
 						height:100%;
@@ -250,14 +367,14 @@ html, body {
 
 					
 					
-				}
-			}
+				}//logo-bottom right
+			}//@media v mobile logo
 
 			
 				
 			
 
-		}
+		}//v.mobile logi
 			
 		// .contact-mobile{
 		// 	display:none;
@@ -527,7 +644,7 @@ html, body {
 				
 				
 					
-				}
+				
 					
 
 					p{
@@ -575,15 +692,15 @@ html, body {
 								margin-right: 10px;
 								
 		
-								}
+							}
 							
 						}
 						
 
 					}
 	
-				}
-			}
+				}//rating
+			}//col section
 
 		}//section.left-column
 		
@@ -758,3 +875,4 @@ html, body {
 		}
 
 	}//section.main-content
+}
