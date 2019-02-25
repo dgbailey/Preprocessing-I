@@ -85,6 +85,10 @@ html, body {
 	margin:0px auto;
 	
 	
+
+
+	
+	
 	@media @mobile{
 		width:100%;
 		
@@ -601,6 +605,7 @@ html, body {
 		line-height: 1.75rem;
 		margin-top:50px;
 		font-weight: 100;
+		justify-content: center;
 
 		@media @mobile{
 			flex-direction: column;
@@ -615,12 +620,18 @@ html, body {
 			
 		}
 
+		
+
 		section.left-column{
 			.column();
 			
 			width:35%;
 			
 			margin-right:5%;
+
+			@media @tablet{
+				width:40%;
+			}
 
 			.mob-show{
 				display:none;
@@ -635,7 +646,9 @@ html, body {
 				.mob-show{
 					display:block;
 				}
+			
 			}
+			
 			
 			
 			.column-section{
@@ -749,6 +762,9 @@ html, body {
 		section.right-column{
 			font-family: @column-text-fs;
 			width:60%;
+			@media @tablet{
+				width:40%;
+			}
 			.column();
 			align-items: center;
 
@@ -830,7 +846,7 @@ html, body {
 				margin:20px 0px;
 				width:100%;
 				
-			
+				
 				
 				
 				
