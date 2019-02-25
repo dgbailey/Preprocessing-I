@@ -230,7 +230,7 @@ body {
 }
 .container-home header .v-desk .logo-br {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 90%;
   height: 44%;
   align-items: flex-end;
@@ -271,9 +271,14 @@ body {
   height: 100%;
   width: 100%;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-radius: 7px;
   letter-spacing: -5px;
+}
+@media ( max-width: 815px) {
+  .container-home header .v-desk .logo-br .square {
+    font-size: 4.5rem;
+  }
 }
 .container-home header .vanity-box {
   height: 100%;
@@ -352,7 +357,7 @@ body {
   }
   .container-home header .v-mobile .logo-br {
     display: flex;
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: 90%;
     height: 44%;
     align-items: flex-end;
@@ -391,6 +396,11 @@ body {
     font-size: 2.5rem;
     border-radius: 7px;
     letter-spacing: -5px;
+  }
+}
+@media ( max-width: 580px ) and ( max-width: 580px ) {
+  .container-home header .v-mobile .logo-br .square {
+    font-size: 3rem;
   }
 }
 .container-home nav {
