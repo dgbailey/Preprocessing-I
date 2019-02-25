@@ -706,7 +706,47 @@ html, body {
 					font-size:1.5rem;
 				}
 
-				
+				button.git{
+					width:50%;
+					height:15%;
+					background:black;
+					border:1px solid black;
+					border-radius: 10px;
+					color:white;
+					display:flex;
+					justify-content: center;
+					align-items: center;
+					margin-top:15px;
+					font-size: 1.5rem;
+					margin:20px 0px;
+					 
+					span {
+						cursor: pointer;
+						display: inline-block;
+						position: relative;
+						transition: 0.5s;
+					}
+					
+					span:after {
+						content: '\00bb';
+						position: absolute;
+						opacity: 0;
+						top: 0;
+						right: -20px;
+						transition: 0.5s;
+					}
+					
+					&:hover span {
+						padding-right: 25px;
+					}
+					
+					&:hover span:after {
+						opacity: 1;
+						right: 0;
+					}
+
+					
+				}
 
 				.column-text{
 					padding:20px 20px 0px 20px;
