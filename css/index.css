@@ -160,7 +160,6 @@ body {
   width: 100%;
   top: 0;
   bottom: 0;
-  z-index: -1;
   pointer-events: none;
 }
 .global-content .header .anchorBottom .backgroundContainer {
@@ -193,6 +192,7 @@ body {
 }
 .global-content .header .anchorBottom .stripeContainer {
   display: flex;
+  -webkit-box-pack: end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -201,9 +201,10 @@ body {
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 85%;
+  height: 100%;
   transform: skewY(-12deg);
   overflow: hidden;
+  pointer-events: none;
 }
 .global-content .header .anchorBottom .stripeContainer .grid {
   display: grid;
@@ -213,4 +214,19 @@ body {
   min-width: 108px;
   grid-template-rows: repeat(auto-fill, 64px);
   grid-template-columns: [viewport-start] 1fr [left-gutter-start] repeat(4, minmax(0, 86.66666667px)) [left-gutter-endcontent-start] repeat(12, minmax(0, 86.66666667px)) [content-end-right-gutter-start] repeat(4, minmax(0, 86.66666667px)) [right-gutter-end] 1fr [viewport-end];
+}
+.global-content .header .anchorBottom .stripeContainer .stripe {
+  margin: 2px;
+}
+.global-content .header .anchorBottom .stripeContainer .stripe:nth-child(2) {
+  grid-row: -9;
+  grid-column: 4 / span 2;
+  background-color: black;
+  margin-top: -2px;
+}
+.global-content .header .anchorBottom .stripeContainer .stripe:nth-child(3) {
+  grid-row: -10;
+  grid-column: 4 / span 1;
+  background-color: gray;
+  margin-top: -2px;
 }

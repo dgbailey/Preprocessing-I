@@ -97,7 +97,7 @@ html, body {
 			width: 100%;
 			top: 0;
 			bottom: 0;
-			z-index: -1;
+			// z-index: -1;
 			
 			pointer-events: none;
 			.backgroundContainer{
@@ -133,6 +133,7 @@ html, body {
 
 			.stripeContainer{
 				display:flex;
+				-webkit-box-pack: end;	
 				-webkit-box-orient: vertical;
 				-webkit-box-direction: normal;
 				flex-direction: column;
@@ -141,9 +142,10 @@ html, body {
 				align-items: center;
 				position: absolute;
 				width: 100%;
-				height: 85%;
+				height: 100%;
 				transform: skewY(-12deg);
 				overflow: hidden;
+				pointer-events: none;
 
 				.grid{
 					display:grid;
@@ -157,8 +159,29 @@ html, body {
 					[left-gutter-endcontent-start] repeat(12,minmax(0,1040px/12))
 					[content-end-right-gutter-start] repeat(4,minmax(0,1040px/12))
 					[right-gutter-end] 1fr [viewport-end];
+
+					
+
+
 				}
+				
+				.stripe{
+					margin:2px;
 						
+					&:nth-child(2){
+					grid-row: -9;
+					grid-column: 4/span 2;
+					background-color:black;
+					margin-top: -2px;
+					}
+					&:nth-child(3){
+						grid-row: -10;
+						grid-column: 4/span 1;
+						background-color:gray;
+						margin-top: -2px;
+						}
+
+				}
 
 
 					
