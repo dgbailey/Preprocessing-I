@@ -106,6 +106,12 @@ section {
 }
 body {
   line-height: 1;
+  min-height: 100%;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 ol,
 ul {
@@ -141,6 +147,7 @@ body {
 .global-content .header .left-gutter {
   padding: 0 20px;
   width: 100%;
+  max-width: 1040px;
 }
 .global-content .header .left-gutter .header-content {
   max-width: 720px;
@@ -184,21 +191,26 @@ body {
   grid-column: -1;
   z-index: -1;
 }
-.global-content .header .anchorBottom .backgroundContainer .stripeContainer {
+.global-content .header .anchorBottom .stripeContainer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
+  justify-content: flex-end;
   -webkit-box-align: center;
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 85%;
   transform: skewY(-12deg);
+  overflow: hidden;
 }
-.global-content .header .anchorBottom .backgroundContainer .stripeContainer .grid {
-  position: absolute;
-  width: 100%;
+.global-content .header .anchorBottom .stripeContainer .grid {
   display: grid;
+  position: absolute;
+  width: 133%;
+  height: 200%;
+  min-width: 108px;
   grid-template-rows: repeat(auto-fill, 64px);
+  grid-template-columns: [viewport-start] 1fr [left-gutter-start] repeat(4, minmax(0, 86.66666667px)) [left-gutter-endcontent-start] repeat(12, minmax(0, 86.66666667px)) [content-end-right-gutter-start] repeat(4, minmax(0, 86.66666667px)) [right-gutter-end] 1fr [viewport-end];
 }
