@@ -142,7 +142,7 @@ html, body {
 				align-items: center;
 				position: absolute;
 				width: 100%;
-				height: 100%;
+				height: 85%;
 				transform: skewY(-12deg);
 				overflow: hidden;
 				pointer-events: none;
@@ -166,21 +166,40 @@ html, body {
 				}
 				
 				.stripe{
-					margin:2px;
+					// margin:2px;
 						
 					&:nth-child(2){
-					grid-row: -9;
-					grid-column: 4/span 2;
+					grid-row: -3;
+					grid-column: 4/span 3;	
 					background-color:black;
-					margin-top: -2px;
+					// margin-top: -2px;
 					}
 					&:nth-child(3){
-						grid-row: -10;
-						grid-column: 4/span 1;
+						grid-row: -2;
+						grid-column: 4/span 4;
 						background-color:gray;
-						margin-top: -2px;
+						// margin-top: -2px;
 						}
 
+					&:nth-child(4){
+						grid-row: -2;
+						grid-column: 4/span 2;
+						background-color:blue;
+						
+						// margin-top: -2px;
+					}
+
+					&:nth-child(5){
+						grid-row: -10;
+						grid-column: 4/span 1;
+						background-color:ghostwhite;
+						
+					
+
+						margin-top: -2px;
+					}
+
+					
 				}
 
 

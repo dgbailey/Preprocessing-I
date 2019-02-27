@@ -201,7 +201,7 @@ body {
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 85%;
   transform: skewY(-12deg);
   overflow: hidden;
   pointer-events: none;
@@ -215,18 +215,24 @@ body {
   grid-template-rows: repeat(auto-fill, 64px);
   grid-template-columns: [viewport-start] 1fr [left-gutter-start] repeat(4, minmax(0, 86.66666667px)) [left-gutter-endcontent-start] repeat(12, minmax(0, 86.66666667px)) [content-end-right-gutter-start] repeat(4, minmax(0, 86.66666667px)) [right-gutter-end] 1fr [viewport-end];
 }
-.global-content .header .anchorBottom .stripeContainer .stripe {
-  margin: 2px;
-}
 .global-content .header .anchorBottom .stripeContainer .stripe:nth-child(2) {
-  grid-row: -9;
-  grid-column: 4 / span 2;
+  grid-row: -3;
+  grid-column: 4 / span 3;
   background-color: black;
-  margin-top: -2px;
 }
 .global-content .header .anchorBottom .stripeContainer .stripe:nth-child(3) {
+  grid-row: -2;
+  grid-column: 4 / span 4;
+  background-color: gray;
+}
+.global-content .header .anchorBottom .stripeContainer .stripe:nth-child(4) {
+  grid-row: -2;
+  grid-column: 4 / span 2;
+  background-color: blue;
+}
+.global-content .header .anchorBottom .stripeContainer .stripe:nth-child(5) {
   grid-row: -10;
   grid-column: 4 / span 1;
-  background-color: gray;
+  background-color: ghostwhite;
   margin-top: -2px;
 }
