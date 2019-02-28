@@ -146,9 +146,18 @@ h1 {
   font-size: 4rem;
   font-family: 'Oswald', sans-serif;
   padding-bottom: 20px;
+  color: #201e54;
+}
+h2 {
+  font-size: 1.5rem;
+  margin: 10px 0px 30px 0px;
+  font-family: 'Caveat', cursive;
 }
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 36px;
+  color: #666678;
 }
 .globalNav {
   display: flex;
@@ -164,9 +173,14 @@ p {
   padding: 20px;
 }
 .globalNav nav a {
-  color: gray;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 36px;
+  color: #666678;
+}
+.globalNav nav :hover {
+  text-decoration: underline;
 }
 .global-content {
   flex-grow: 1;
@@ -174,26 +188,29 @@ p {
 .global-content .overflowContainer {
   overflow: hidden;
 }
-.global-content .overflowContainer .left-gutter {
+.global-content .overflowContainer .header {
+  position: relative;
+}
+.global-content .overflowContainer .header .left-gutter {
   padding: 0 20px;
   width: 100%;
-  height: 588px;
   margin: 0 auto;
+  max-width: 1040px;
 }
-.global-content .overflowContainer .left-gutter .header-content {
+.global-content .overflowContainer .header .left-gutter .header-content {
   max-width: 720px;
   margin: 0px auto;
   text-align: center;
   padding: 160px 100px;
 }
-.global-content .overflowContainer .anchorBottom {
+.global-content .overflowContainer .header .anchorBottom {
   position: absolute;
   width: 100%;
   top: 0;
   bottom: 0;
   pointer-events: none;
 }
-.global-content .overflowContainer .anchorBottom .backgroundContainer {
+.global-content .overflowContainer .header .anchorBottom .backgroundContainer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -206,7 +223,7 @@ p {
   transform: skewY(-12deg);
   justify-content: flex-end;
 }
-.global-content .overflowContainer .anchorBottom .backgroundContainer .grid {
+.global-content .overflowContainer .header .anchorBottom .backgroundContainer .grid {
   height: 200%;
   align-content: end;
   grid-template-columns: 1fr;
@@ -216,12 +233,12 @@ p {
   display: grid;
   grid-template-rows: repeat(auto-fill, 64px);
 }
-.global-content .overflowContainer .anchorBottom .backgroundContainer .grid .background {
+.global-content .overflowContainer .header .anchorBottom .backgroundContainer .grid .background {
   grid-row: -1;
   grid-column: -1;
   z-index: -1;
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer {
+.global-content .overflowContainer .header .anchorBottom .stripeContainer {
   display: flex;
   -webkit-box-pack: end;
   -webkit-box-orient: vertical;
@@ -232,12 +249,12 @@ p {
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 85%;
+  height: 100%;
   transform: skewY(-12deg);
-  overflow: hidden;
   pointer-events: none;
+  overflow: hidden;
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer .grid {
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .grid {
   display: grid;
   position: absolute;
   width: 133%;
@@ -246,44 +263,44 @@ p {
   grid-template-rows: repeat(auto-fill, 64px);
   grid-template-columns: [viewport-start] 1fr [left-gutter-start] repeat(4, minmax(0, 86.66666667px)) [left-gutter-endcontent-start] repeat(12, minmax(0, 86.66666667px)) [content-end-right-gutter-start] repeat(4, minmax(0, 86.66666667px)) [right-gutter-end] 1fr [viewport-end];
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer .stripe:nth-child(2) {
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(2) {
   grid-row: -3;
-  grid-column: 4 / span 2;
+  grid-column: 3 / span 3;
   background-color: #77c35e;
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer .stripe:nth-child(3) {
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(3) {
   grid-row: -2;
-  grid-column: 3 / span 5;
+  grid-column: 4 / span 5;
   background-color: #e85235;
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer .stripe:nth-child(4) {
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(4) {
   grid-row: -2;
-  grid-column: 4 / span 1;
-  background-color: #413e8c;
-}
-.global-content .overflowContainer .anchorBottom .stripeContainer .stripe:nth-child(5) {
-  grid-row: -10;
-  grid-column: 4 / span 1;
+  grid-column: 4 / span 3;
   background-color: #f6d556;
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer .stripe:nth-child(6) {
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(5) {
   grid-row: -9;
+  grid-column: 3 / span 2;
+  background-color: #db70a1;
+}
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(6) {
+  grid-row: -10;
   grid-column: 4 / span 2;
   background-color: black;
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer .stripe:nth-child(7) {
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(7) {
   grid-row: -2;
   grid-column: 19 / span 2;
   border: 1px solid #e85235;
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer .stripe:nth-child(8) {
-  grid-row: -6;
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(8) {
+  grid-row: -7;
   grid-column: 17 / span 3;
   border: 1px solid #77c35e;
 }
-.global-content .overflowContainer .anchorBottom .stripeContainer .stripe:nth-child(9) {
-  grid-row: -5;
-  grid-column: 18 / span 2;
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(9) {
+  grid-row: -6;
+  grid-column: 19 / span 1;
   background: #8a4032;
 }
 .global-content .overflowContainer .sectionBottom {
@@ -370,7 +387,7 @@ p {
 .global-content .overflowContainer .sectionBottom .gen-container .stripeContainer .grid .stripe:nth-child(3) {
   grid-row: -10;
   grid-column: 17 / span 4;
-  background-color: #413e8c;
+  background-color: #374492;
 }
 .global-content .overflowContainer .sectionBottom .gen-container .stripeContainer .grid .stripe:nth-child(4) {
   grid-row: -11;
