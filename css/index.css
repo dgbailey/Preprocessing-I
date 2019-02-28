@@ -229,18 +229,18 @@ p {
 }
 .global-content .anchorBottom .stripeContainer .stripe:nth-child(2) {
   grid-row: -3;
-  grid-column: 4 / span 3;
-  background-color: black;
+  grid-column: 4 / span 2;
+  background-color: green;
 }
 .global-content .anchorBottom .stripeContainer .stripe:nth-child(3) {
   grid-row: -2;
-  grid-column: 4 / span 5;
-  background-color: gray;
+  grid-column: 3 / span 5;
+  background-color: orangered;
 }
 .global-content .anchorBottom .stripeContainer .stripe:nth-child(4) {
   grid-row: -2;
-  grid-column: 4 / span 3;
-  background-color: blue;
+  grid-column: 4 / span 1;
+  background-color: royalblue;
 }
 .global-content .anchorBottom .stripeContainer .stripe:nth-child(5) {
   grid-row: -10;
@@ -249,23 +249,23 @@ p {
 }
 .global-content .anchorBottom .stripeContainer .stripe:nth-child(6) {
   grid-row: -9;
-  grid-column: 4 / span 3;
-  background-color: palegreen;
+  grid-column: 4 / span 2;
+  background-color: black;
 }
 .global-content .anchorBottom .stripeContainer .stripe:nth-child(7) {
-  grid-row: -5;
-  grid-column: 4 / span 2;
-  border: 1px solid lightblue;
+  grid-row: -2;
+  grid-column: 19 / span 2;
+  border: 1px solid orangered;
 }
 .global-content .anchorBottom .stripeContainer .stripe:nth-child(8) {
   grid-row: -6;
   grid-column: 17 / span 3;
-  border: 1px solid lightblue;
+  border: 1px solid green;
 }
 .global-content .anchorBottom .stripeContainer .stripe:nth-child(9) {
   grid-row: -5;
   grid-column: 18 / span 2;
-  background: yellow;
+  background: goldenrod;
 }
 .global-content .sectionBottom {
   position: relative;
@@ -350,11 +350,11 @@ p {
 }
 .global-content .sectionBottom .gen-container .stripeContainer .grid .stripe:nth-child(3) {
   grid-row: -10;
-  grid-column: 18 / span 2;
-  background-color: purple;
+  grid-column: 17 / span 4;
+  background-color: royalblue;
 }
 .global-content .sectionBottom .gen-container .stripeContainer .grid .stripe:nth-child(4) {
   grid-row: -11;
-  grid-column: 14 / span 3;
-  background-color: palegreen;
+  grid-column: 14 / span 4;
+  background-color: green;
 }
