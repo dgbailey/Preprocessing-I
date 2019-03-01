@@ -165,6 +165,7 @@ p {
   align-items: center;
   justify-content: center;
   width: 100%;
+  z-index: 100;
 }
 .globalNav nav {
   display: flex;
@@ -174,12 +175,12 @@ p {
 }
 .globalNav nav a {
   font-size: 1.1rem;
-  text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   line-height: 36px;
   color: #666678;
+  text-decoration: none;
 }
-.globalNav nav :hover {
+.globalNav nav a:hover {
   text-decoration: underline;
 }
 .global-content {

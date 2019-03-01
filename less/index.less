@@ -98,27 +98,30 @@ p{
 	align-items:center;
 	justify-content: center;
 	width:100%;
+	z-index: 100;
 
 	nav{
 		display:flex;
 		width:100%;
 		justify-content: space-around;
 		padding:20px;
-	
+		
 		
 		
 		a{
 			font-size: 1.10rem;
-			text-decoration: none;
+			
 			font-family: 'Open Sans', sans-serif;
 			line-height: 36px;
 			color: rgb(102, 102, 120);
-			
+			text-decoration: none;
+		}
 		
+		a:hover{
+				text-decoration: underline;
+				
 		}
-		& :hover{
-			text-decoration: underline;
-		}
+		
 		
 	}
 }
