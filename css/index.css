@@ -341,6 +341,9 @@ p {
   grid-row: 1 / span3;
   padding: 20px 60px;
 }
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-left p {
+  padding-bottom: 10px;
+}
 .global-content .overflowContainer .sectionBottom .gen-container {
   z-index: 1;
   position: absolute;
