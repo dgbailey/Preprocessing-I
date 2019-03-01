@@ -85,6 +85,15 @@ h2{
 	font-family: 'Caveat', cursive;
 }
 
+h3{
+	color:	#3d389b;
+	font-size: 1.75rem;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+	letter-spacing: .2rem;
+	font-weight:bold;
+}
+
 p{
 	font-size: 1.5rem;
 	font-family: 'Open Sans', sans-serif;
@@ -327,8 +336,15 @@ p{
 					position: relative;
 					z-index: 2;
 					grid-template-columns: 1fr 1fr;
-					grid-template-rows: auto;
+					grid-template-rows: 2fr 1fr 1fr;
 					gap: 0 100px;
+
+					.text-section-left{
+						grid-row:1/span3;
+						padding:20px 60px;
+					}
+
+
 				}
 				
 			}
@@ -434,5 +450,8 @@ p{
 		
 			
 		}//sectionBottom
+
 	}//overflow
+
+	
 }//globalContent
