@@ -146,7 +146,7 @@ h1 {
   font-size: 4rem;
   font-family: 'Oswald', sans-serif;
   padding-bottom: 20px;
-  color: #201e54;
+  color: #3d389b;
 }
 h2 {
   font-size: 1.5rem;
@@ -182,6 +182,7 @@ p {
 }
 .globalNav nav a:hover {
   text-decoration: underline;
+  color: #3d389b;
 }
 .global-content {
   flex-grow: 1;
@@ -264,6 +265,11 @@ p {
   grid-template-rows: repeat(auto-fill, 64px);
   grid-template-columns: [viewport-start] 1fr [left-gutter-start] repeat(4, minmax(0, 86.66666667px)) [left-gutter-endcontent-start] repeat(12, minmax(0, 86.66666667px)) [content-end-right-gutter-start] repeat(4, minmax(0, 86.66666667px)) [right-gutter-end] 1fr [viewport-end];
 }
+.global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:first-child {
+  border: 1px solid lightgray;
+  grid-row: -7;
+  grid-column: 2 / span 2;
+}
 .global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(2) {
   grid-row: -3;
   grid-column: 3 / span 3;
@@ -280,13 +286,13 @@ p {
   background-color: #f6d556;
 }
 .global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(5) {
-  grid-row: -9;
+  grid-row: -8;
   grid-column: 3 / span 2;
   background-color: #db70a1;
 }
 .global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(6) {
-  grid-row: -10;
-  grid-column: 4 / span 2;
+  grid-row: -9;
+  grid-column: 5 / span 2;
   background-color: black;
 }
 .global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(7) {
