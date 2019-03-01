@@ -333,15 +333,33 @@ p {
   position: relative;
   z-index: 2;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 0 100px;
 }
 .global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-left {
   grid-row: 1 / span3;
   padding: 20px 60px;
+  margin: 0 auto;
 }
 .global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-left p {
   padding-bottom: 10px;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .stack {
+  margin: 1px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .stack img {
+  height: 120px;
+  width: 120px;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .stack .one {
+  flex-grow: 2;
 }
 .global-content .overflowContainer .sectionBottom .gen-container {
   z-index: 1;
@@ -413,5 +431,5 @@ p {
 .global-content .overflowContainer .sectionBottom .gen-container .stripeContainer .grid .stripe:nth-child(4) {
   grid-row: -11;
   grid-column: 15 / span 3;
-  background-color: #77c35e;
+  background-color: lightgray;
 }
