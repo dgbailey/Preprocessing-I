@@ -351,30 +351,75 @@ p{
 
 					.text-section-right{
 						
-						display: flex;
-						flex-direction: row;
-						flex-wrap: wrap;
+						display:grid;
+						grid-template-columns: repeat(6, 1fr);
+						grid-gap: 10px;
+						grid-auto-rows: 100px;
+						grid-template-areas: 
+						
+						  "a a a e e e"
+						  "a a a b b b"
+						  "a a a b b b"
+						  "a a a d d d"
+						  "c c c d d d";
+						align-items: start;
+					
+						
+						.one{
+							grid-area: a;
+							background:yellow;
+							height: 100%;
+						
+						}
 
+						.two{
+							grid-area: b;
+							background:palegoldenrod;
+							height: 100%;
 						
+						}
+
+						.three{
+							grid-area: c;
+							background:palevioletred;
+							height: 100%;
 						
+						}
+						
+						.four{
+							grid-area: d;
+							background:peachpuff;
+							height: 100%;
+						
+						}
 
 						.stack{
-							
-							margin:1px;
+							// padding:30px;
+							// margin:1px;
 							border:1px solid gray;
 							border-radius: 5px;
 							
 							
+							// width:35%;
+							// height:30%;
+							
+							img.js-logo{
+								height:200px;
+								width:200px;
+								
+							}
+							
+							
 
-							img {
-								height:120px;
-								width:120px;
+							img.html-css{
+								height:100px;
+									width:100px;
 							}
 
-							.one{
-								flex-grow: 2;
-							}
-							 
+							
+							
+
+							
 						}
 
 
