@@ -149,6 +149,9 @@ h1 {
   color: #3d389b;
   letter-spacing: 0.1rem;
 }
+.blinker {
+  display: inline;
+}
 h2 {
   font-size: 1.5rem;
   margin: 10px 0px 30px 0px;
@@ -159,7 +162,28 @@ h3 {
   font-size: 1.75rem;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 20px;
+  display: inline-block;
   font-weight: bold;
+}
+span.blinker h3 {
+  animation: blinkingText 3s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: #000;
+  }
+  49% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #000;
+  }
 }
 p {
   font-size: 1.5rem;
