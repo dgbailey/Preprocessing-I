@@ -147,6 +147,7 @@ h1 {
   font-family: 'Oswald', sans-serif;
   padding-bottom: 20px;
   color: #3d389b;
+  letter-spacing: 0.1rem;
 }
 h2 {
   font-size: 1.5rem;
