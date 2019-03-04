@@ -361,13 +361,13 @@ p {
   grid-template-rows: 1fr;
   gap: 0 100px;
 }
+.global-content .overflowContainer .sectionBottom .lower-content .section-one p {
+  margin-bottom: 20px;
+}
 .global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-left {
   grid-row: 1 / span3;
   padding: 20px 60px;
   margin: 0 auto;
-}
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-left p {
-  padding-bottom: 10px;
 }
 .global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right {
   column-gap: 1fr;
