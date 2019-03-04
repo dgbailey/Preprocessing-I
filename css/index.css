@@ -305,7 +305,7 @@ p {
 .global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(7) {
   grid-row: -2;
   grid-column: 19 / span 3;
-  border: 1px solid #e85235;
+  border: 1px solid #fab9ac;
 }
 .global-content .overflowContainer .header .anchorBottom .stripeContainer .stripe:nth-child(8) {
   grid-row: -7;
@@ -345,50 +345,67 @@ p {
   padding-bottom: 10px;
 }
 .global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right {
+  column-gap: 1fr;
+  background: #f6f9fc;
   display: grid;
   padding: 10px;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  grid-template-rows: repeat(5, 100px);
-  grid-template-areas: "a a a b b b" "a a a b b b" "c c c d d d" "c c c d d d" "c c c d d d";
+  grid-gap: 0.5vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 400px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .one {
-  grid-area: a;
-}
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .two {
-  grid-area: b;
-  background: palegoldenrod;
-}
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .two img {
-  height: 100%;
-  width: 50%;
-}
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .three {
-  grid-area: c;
-  background: palevioletred;
-  height: 100%;
-  width: 100%;
-}
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .three img {
-  width: 150px;
-  height: 150px;
-  padding: 10px;
-}
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .four {
-  grid-area: d;
-  background: peachpuff;
-  height: 100%;
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right img:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 .global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .stack {
-  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .stack img.js-logo {
-  height: 200px;
-  width: 200px;
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .one {
+  background: #f6f9fc;
+  grid-row: 4;
+  grid-column: 1;
 }
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .stack img.html-css {
-  height: 100px;
-  width: 100px;
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .one img {
+  height: 50px;
+  width: 60px;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .two {
+  grid-row: 1;
+  grid-column: 1;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .two img {
+  transform: scale(1.5);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  height: 50px;
+  width: 50px;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .three {
+  background: #f6f9fc;
+  grid-row: 2;
+  grid-column: 1;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .three img {
+  height: 50px;
+  width: 50px;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .four {
+  background: #f6f9fc;
+  grid-row: 3;
+  grid-column: 1;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .four img {
+  height: 50px;
+  width: 50px;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .library {
+  background: palegoldenrod;
+  grid-column: 2 / span 6;
+  grid-row: 1 / span 6;
 }
 .global-content .overflowContainer .sectionBottom .gen-container {
   z-index: 1;
