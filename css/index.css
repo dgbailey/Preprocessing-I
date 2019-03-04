@@ -427,10 +427,26 @@ p {
   height: 50px;
   width: 50px;
 }
-.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right .library {
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right #library {
   background: palegoldenrod;
   grid-column: 2 / span 6;
   grid-row: 1 / span 6;
+  visibility: hidden;
+}
+.global-content .overflowContainer .sectionBottom .lower-content .section-one .text-section-right #slideUp {
+  animation: slideUp 4s;
+  visibility: visible;
+  background: palegoldenrod;
+  grid-column: 2 / span 6;
+  grid-row: 1 / span 6;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .global-content .overflowContainer .sectionBottom .gen-container {
   z-index: 1;

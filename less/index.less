@@ -107,8 +107,11 @@ span.blinker h3{
     49%{    color: transparent; }
     50%{    color: transparent; }
     99%{    color:transparent;  }
-    100%{   color: #000;    }
+	100%{   color: #000;    }
+	
 }
+
+
 
 p{
 	font-size: 1.5rem;
@@ -455,13 +458,33 @@ p{
 							
 						}
 
-						.library{
+						#library{
 							background:palegoldenrod;
 							grid-column: 2/ span 6;
 							grid-row:1/ span 6;
+							visibility: hidden;
 						}
 						
+						
 
+						#slideUp{
+							animation: slideUp 4s;
+							visibility: visible;
+							background:palegoldenrod;
+							grid-column: 2/ span 6;
+							grid-row:1/ span 6;
+							
+						}
+						@keyframes slideUp {
+							0% {
+							  opacity: 0;
+							  
+							} 
+							100% {
+							  opacity: 1;
+							  
+							}
+						  }
 
 					}
 

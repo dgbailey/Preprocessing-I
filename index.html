@@ -17,6 +17,15 @@
     <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
           <![endif]-->
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      function myFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("library").id = "slideUp";
+        }
+      }
+      </script>
   </head>
   <body>
     
@@ -73,9 +82,7 @@
                   behind object oriented programming.
                   Many of its core principals have shaped and aided my understanding of
                   new languages.</p>
-                <p>I have rated my competency on each of these out of 5. 
-                  
-                </p>
+              
                 
                 </p>
               </div>
@@ -86,8 +93,8 @@
                 <div class='stack two'><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt=""></div>
                 <div class='stack three'><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt=""></div>
                 <div class='stack four'><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt=""></div>
-                <div class="library"></div>
-                
+                <div class="stack five" id='library'></div>
+               
 
 
               </div>
