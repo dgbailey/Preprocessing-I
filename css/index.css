@@ -537,31 +537,45 @@ p {
 .global-content .experience p {
   margin-bottom: 40px;
 }
-.global-content .experience .graph {
+.global-content .experience .graph-container {
   display: grid;
-  grid-template-columns: repeat(52, 2fr);
-  grid-template-rows: repeat(8, 1fr);
-  width: 820px;
+  width: 920px;
   height: 200px;
+  grid-template-columns: repeat(53, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   margin: 0 auto;
-  border: 2px solid lightgray;
-  padding: 20px;
+  order: 2px solid lightgray;
   border-radius: 5px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
-.global-content .experience .graph .legend {
+.global-content .experience .graph-container .weekdays {
+  grid-column: 2;
+  grid-row: 2;
+}
+.global-content .experience .graph-container .graph {
+  grid-column: 2;
+  display: grid;
+  padding: 20px;
+  width: 900px;
+  height: 200px;
+  grid-template-columns: repeat(53, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column: 2 / span 52;
+}
+.global-content .experience .graph-container .graph .legend {
   font-family: 'Open Sans', sans-serif;
   color: grey;
   font-weight: bold;
   font-size: 0.75rem;
   text-align: left;
   display: grid;
+  grid-auto-flow: column;
   grid-template-columns: repeat(12, 4fr);
   grid-template-rows: repeat(1, 0.5fr);
-  grid-column: 1 / span 52;
+  grid-column: 2 / span 52;
   padding: 10px 0px;
 }
-.global-content .experience .graph .weekdays {
+.global-content .experience .graph-container .graph .weekdays {
   display: grid;
   color: grey;
   font-weight: bold;

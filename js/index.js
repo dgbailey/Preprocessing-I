@@ -14,7 +14,8 @@ let graph = document.querySelector('.graph');
 
 
 function populate(){
-    for(let i =0 ; i < 365 ; i++){
+    'use strict';
+    for(let i =0 ; i < 380 ; i++){
         let heat_sq = document.createElement('div');
         heat_sq.style.height = '1fr';
         heat_sq.style.width = '1fr';

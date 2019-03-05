@@ -628,46 +628,66 @@ p{
 		p{
 			margin-bottom:40px;
 		}
-		.graph{
+		//make this a grid in a grid
+
+		.graph-container{
 			display:grid;
-			grid-template-columns: repeat(52,2fr);
+			width:920px;
+			height:200px;
+			grid-template-columns: repeat(53,1fr);
 			grid-template-rows:repeat(8,1fr);
 			
-			width:820px;
-			height:200px;
 			margin:0 auto;
-			border:2px solid lightgray;
-			padding:20px;
+			order:2px solid lightgray;
+				
 			border-radius: 5px;
 			box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 
-			.legend{
-				font-family: 'Open Sans', sans-serif;
-				color:grey;
-				font-weight: bold;
-				font-size: .75rem;
-				text-align: left;
-				display:grid;
-				grid-template-columns: repeat(12,4fr);
-				grid-template-rows:repeat(1,.5fr);
-				grid-column: 1/span 52;
-				padding: 10px 0px;
-				// grid-row-gap: 0;
-				
-			}
-
 			.weekdays{
+					grid-column: 2;
+					grid-row:2;
+			}
+		
+			.graph{
+				grid-column: 2;
 				display:grid;
-				color:grey;
-				font-weight: bold;
-				font-size: .75rem;
-				grid-template-rows:repeat(7,1fr);
-				grid-template-columns: repeat(1,1fr);
-				grid-row:1/span 3;
+				padding:20px;
+				width:900px;
+				height:200px;
+				grid-template-columns: repeat(53,1fr);
+				grid-template-rows:repeat(8,1fr);
+				grid-column:2/span 52;
 				
+				
+				.legend{
+					font-family: 'Open Sans', sans-serif;
+					color:grey;
+					font-weight: bold;
+					font-size: .75rem;
+					text-align: left;
+					display:grid;
+					grid-auto-flow: column;
+					grid-template-columns: repeat(12,4fr);
+					grid-template-rows:repeat(1,.5fr);
+					grid-column: 2/span 52;
+					padding: 10px 0px;
+					// grid-row-gap: 0;
+					
+				}
+
+				.weekdays{
+					display:grid;
+					color:grey;
+					font-weight: bold;
+					font-size: .75rem;
+					grid-template-rows:repeat(7,1fr);
+					grid-template-columns: repeat(1,1fr);
+					grid-row:1/span 3;
+					
+					
+				}
 				
 			}
-			
-		}
+		}//graph container
 	}	
 }//globalContent
