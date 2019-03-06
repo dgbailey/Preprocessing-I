@@ -40,3 +40,5 @@ function httpGetAsync(theUrl, callback)
 }
 
 httpGetAsync('https://api.github.com/repos/dgbailey/Preprocessing-I/stats/commit_activity',x => console.log(x));
+//list of all repos
+httpGetAsync('https://api.github.com/users/dgbailey/repos',x => console.log(x));
