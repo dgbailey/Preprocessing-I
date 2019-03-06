@@ -25,3 +25,18 @@ function populate(){
     }
 }
 populate();
+
+//HTTP Call to github for commit data
+function httpGetAsync(theUrl, callback)
+{
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() { 
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          console.log(xmlHttp.status);
+          callback(xmlHttp.responseText);}
+  }
+  xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+  xmlHttp.send(null);
+}
+
+httpGetAsync('https://api.github.com/repos/dgbailey/Preprocessing-I/stats/commit_activity',x => console.log(x));
