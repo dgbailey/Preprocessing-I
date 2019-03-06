@@ -632,10 +632,10 @@ p{
 
 		.graph-container{
 			display:grid;
-			width:920px;
+			width:965px;
 			height:200px;
-			grid-template-columns: repeat(53,1fr);
-			grid-template-rows:repeat(8,1fr);
+			grid-template-columns: repeat(53,2fr);
+			grid-template-rows:repeat(12,2fr);
 			
 			margin:0 auto;
 			order:2px solid lightgray;
@@ -643,10 +643,34 @@ p{
 			border-radius: 5px;
 			box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 
-			.weekdays{
-					grid-column: 2;
-					grid-row:2;
+			
+			.day{
+				font-family: 'Open Sans', sans-serif;
+					color:grey;
+					font-weight: bold;
+					font-size: .75rem;
+					padding-top:1px;
+					padding-left:10px;
 			}
+			
+			.mon{
+				grid-column: 1;
+				grid-row: 5;
+				margin:5px;
+			}
+
+			.tue{
+				grid-column: 1;
+				grid-row: 7;
+			}
+
+			.wed{
+				grid-column: 1;
+				grid-row: 9;
+				padding-top:3px;
+			}
+			
+			
 		
 			.graph{
 				grid-column: 2;
@@ -654,9 +678,11 @@ p{
 				padding:20px;
 				width:900px;
 				height:200px;
-				grid-template-columns: repeat(53,1fr);
+				grid-template-columns: repeat(52,1fr);
 				grid-template-rows:repeat(8,1fr);
 				grid-column:2/span 52;
+				grid-row:1/span 8;
+				margin-right: 20px;
 				
 				
 				.legend{
